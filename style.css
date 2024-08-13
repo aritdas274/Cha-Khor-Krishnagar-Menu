@@ -61,7 +61,7 @@ body {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    animation: upbutton 0.5ss ease-in;
+    animation: upbutton 0.5s ease-in;
 }
 
 #navbar {
@@ -71,7 +71,7 @@ body {
     background-color: #000000;
     border: none;
     width: 110vw;
-    height: 6vh;
+    height: 10vh;
     font-size: 24px;
     text-align: center;
     border-bottom-left-radius: 25rem;
@@ -86,23 +86,14 @@ body {
 }
 
 #logo {
-    height: 4vh;
+    height: 6vh;
     aspect-ratio: 978/452;
-    margin-left: 2rem;
-    margin-top: 0.4rem;
+    margin-left: 3rem;
+    margin-top: 0.7rem;
 }
 
-/* #text {
-    color: black;
-    transform: translateY(-15%);
-    font-family: 'Comic Sans MS';
-    font-weight: 800;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
 #container {
-    transform: translate(1rem, 4rem);
+    transform: translate(1rem, 5rem);
     display: grid;
     grid-gap: 2%;
     animation: con 0.5s ease-in;
