@@ -66,7 +66,7 @@ body {
 
 #navbar {
     position: fixed;
-    top: 0vh;
+    top: 2vh;
     left: 0px;
     background-color: #000000;
     border: none;
@@ -74,14 +74,13 @@ body {
     height: 10vh;
     font-size: 24px;
     text-align: center;
-    border-bottom-left-radius: 25rem;
     line-height: 60px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     z-index: 100;
     backdrop-filter: blur(2px);
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 1fr 1fr 1fr;
     animation: nav 0.5s ease-in;
 }
 
@@ -90,6 +89,8 @@ body {
     aspect-ratio: 978/452;
     margin-left: 3rem;
     margin-top: 0.7rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 #container {
