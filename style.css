@@ -87,14 +87,13 @@ body {
 #logo {
     height: 6vh;
     aspect-ratio: 978/452;
-    margin-left: 3rem;
     margin-top: 0.7rem;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 #container {
-    transform: translate(1rem, 5rem);
+    transform: translate(1rem, 7rem);
     display: grid;
     grid-gap: 2%;
     animation: con 0.5s ease-in;
