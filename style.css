@@ -1,3 +1,4 @@
+
 body {
     background-image: url('background.jpg');
     /* Specify the path to your image */
@@ -127,6 +128,8 @@ h2 {
     width: 90vw;
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.3);
+    border: 0.01rem solid rgb(0, 0, 0);
+    border-bottom-left-radius: 0rem;
     backdrop-filter: blur(2px);
     display: grid;
     grid-gap: 0.5rem;
