@@ -1,6 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-image: url('background.jpg');
+    background-image: url('https://i.ibb.co/9TK6qL7/background.jpg');
     /* Specify the path to your image */
     background-repeat: no-repeat;
     /* Prevent the image from repeating */
@@ -96,6 +99,25 @@ body {
     animation: nav 0.5s ease-in;
 }
 
+#offer {
+    width: 94%;
+    aspect-ratio: 210/297;
+    border-radius: 2rem;
+    position: static;
+    margin-left: 0.01rem;
+    margin-top: 1rem;
+    background-image: url('https://i.ibb.co/R37SqDT/offer.png');
+    /* Specify the path to your image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Make the background fixed */
+}
+
 h1 {
     background-color: white;
     padding: 1rem;
@@ -114,7 +136,7 @@ h1 {
 #container {
     transform: translate(1rem, 7rem);
     display: grid;
-    grid-gap: 2%;
+    grid-gap: 0.5%;
     animation: con 0.5s ease-in;
 }
 
@@ -126,6 +148,7 @@ h2 {
     border-right: 0.5rem solid white;
     border-radius: 25rem;
     background-color: white;
+    filter: drop-shadow(0rem 0rem 0.5rem white);
 }
 
 .item {
@@ -136,9 +159,10 @@ h2 {
 
 .item1 {
     /* padding: 2rem; */
-    color: rgb(255, 255, 255);
+    color: black;
     /* align-items: center; */
     text-align: center;
+    filter: drop-shadow(0rem 0rem 0.5rem white);
 }
 
 .group {
@@ -169,7 +193,7 @@ h2 {
     width: 90vw;
     border: 0.5rem solid black;
     border-radius: 1rem;
-    background-color: rgba(250, 221, 35, 0.584);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(2px);
     display: grid;
     grid-gap: 0.5rem;
@@ -177,7 +201,7 @@ h2 {
 }
 
 .subg1 {
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgb(250, 221, 35);
     border-radius: 1rem;
     margin: 0.5rem;
     text-decoration: none;
@@ -219,18 +243,18 @@ h2 {
 }
 
 #hd5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-#hd6 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
+/* #hd6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+} */
 
 #cold {
     display: grid;
@@ -265,12 +289,12 @@ h2 {
     grid-row-end: 3;
 }
 
-#cd5 {
+/* #cd5 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-}
+} */
 
 #cd6 {
     grid-column-start: 2;
@@ -338,18 +362,27 @@ h2 {
     grid-row-end: 3;
 }
 
+
 #hs5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+#hs6 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-#hs6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+#hs7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 
