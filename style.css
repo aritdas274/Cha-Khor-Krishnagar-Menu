@@ -93,7 +93,7 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     z-index: 100;
-    backdrop-filter: blur(2px);
+    border-radius: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     animation: nav 0.5s ease-in;
