@@ -85,15 +85,14 @@ body {
     left: 0px;
     background-color: #000000;
     border: none;
-    width: 100vw;
+    width: 110vw;
     height: 10vh;
     font-size: 24px;
     text-align: center;
     line-height: 60px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    z-index: 100;
-    border-radius: 4rem;
+    z-index: 100;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     animation: nav 0.5s ease-in;
