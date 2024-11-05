@@ -1,567 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
+@font-face {
+    font-family: arca-majora3;
+    src: url(arca-majora3.otf);
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-    <title>Cha-Khor KNG Menu</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+body{
+    background-color: black;
+}
 
-<body id="ub">
-    <header>
-        <div id="navbar">
-            <!-- <a id="text" href="">Cha-Khor Web-Menu</a> -->
-            <img src="https://i.ibb.co/YtBdmVn/Cha-khor-logo-t2.png" alt="logo" id="logo">
-        </div>
-    </header>
+#mainbox{
+    height: auto;
+    display: flex;
+    /* border: 2px solid white; */
+    row-gap: 3vh;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-    <main>
-        <div id="container">
-            <div id="offer"></div>
-            <div id="disclaimer">
-                <details>
-                    <summary>TERMS & CONDITIONS FOR "ORDER ON CALL"</summary>
-                    <ul>
-                        <li>An additional 5rs will be charged per item for packing.</li>
-                        <li>An additional 30rs will be charged for delivery.</li>
-                    </ul>
-                    <p>By using "ORDER ON CALL" you are accepting our terms and conditins.</p>
-                </details>
-            </div>
-            <h1>CATEGORIES</h1>
-            <div id="hot" class="group">
-                <h2>HOT DRINGS</h2>
-                <a id="hd1" class="subg" href="#1">
-                    <p class="item">Plain Milk Tea</p>
-                </a>
-                <a id="hd2" class="subg" href="#2">
-                    <p class="item">Premium Milk Tea</p>
-                </a>
-                <a id="hd3" class="subg" href="#3">
-                    <p class="item">Fusion Milk Tea</p>
-                </a>
-                <a id="hd4" class="subg" href="#4">
-                    <p class="item">Red & Flavoured Tea Large</p>
-                </a>
-                <a id="hd5" class="subg" href="#5">
-                    <p class="item">Hot & Fusion Coffee</p>
-                </a>
-                <!-- <a id="hd6" class="subg" href="">
-                    <p class="item">Hot Chocolate</p>
-                </a> -->
-            </div>
+.box1{
+    width: 40vw;
+    aspect-ratio: 167/179;
+    /* background-image: linear-gradient(#ffe02fa2, #968000); */
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 18%, 0.5));
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* row-gap: 10%; */
+}
 
-            <div id="cold" class="group">
+.box1:hover{
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
 
-                <h2>COLD DRINKS & FOODS</h2>
-                <a id="cd1" class="subg" href="#6">
-                    <p class="item">Coke</p>
-                </a>
-                <a id="cd2" class="subg" href="#7">
-                    <p class="item">Mojito / Coler</p>
-                </a>
-                <a id="cd3" class="subg" href="#8">
-                    <p class="item">Milk Shake</p>
-                </a>
-                <a id="cd4" class="subg" href="#9">
-                    <p class="item">Cold Coffee</p>
-                </a>
-                <!-- <a id="cd5" class="subg" href="">
-                    <p class="item">ICE TEA</p>
-                </a> -->
-                <a id="cd6" class="subg" href="#10">
-                    <p class="item">ICE-CREAM</p>
-                </a>
-            </div>
+@keyframes hover{
+    0%{
+        
+    }
 
-            <div id="snacks" class="group">
+    100%{
+        border-radius: 50px;
+        filter: saturate(1.2);
+        filter: drop-shadow(0px 0px 50px #fae570);
+    }
+}
 
-                <h2>SNACKS</h2>
-                <a id="s1" class="subg" href="#11">
-                    <p class="item">Veg Items</p>
-                </a>
-                <a id="s2" class="subg" href="#12">
-                    <p class="item">Chicken Items</p>
-                </a>
-                <a id="s3" class="subg" href="#13">
-                    <p class="item">Fish Items</p>
-                </a>
-            </div>
+.img-box{
+    width: 75%;
+    aspect-ratio: 478/490;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.412));
+}
 
-            <div id="HungerSolution" class="group">
+.img-box:active{
+    animation-name: click;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
 
-                <h2>HUNGER SULUTION</h2>
-                <a id="hs1" class="subg" href="#14">
-                    <p class="item">Maggi</p>
-                </a>
-                <a id="hs2" class="subg" href="#15">
-                    <p class="item">Sandwich</p>
-                </a>
-                <a id="hs3" class="subg" href="#16">
-                    <p class="item">Club Sandwich</p>
-                </a>
-                <a id="hs4" class="subg" href="#17">
-                    <p class="item">Burger</p>
-                </a>
-                <a id="hs5" class="subg" href="#18">
-                    <p class="item">Pav Bhaji</p>
-                </a>
-                <a id="hs6" class="subg" href="#19">
-                    <p class="item">Pasta</p>
-                </a>
-                <a id="hs7" class="subg" href="#20">
-                    <p class="item">Toast</p>
-                </a>
+@keyframes click{
+    0%{
 
-            </div>
-            <!-- Main menu starts from here -->
+    }
 
-            <h1>MENU</h1>
+    50%{
+        opacity: 0%;
+    }
 
-            <div id="rc" class="group1">
+    100%{
+        opacity: 100%;
+        transform: rotate(20deg);
+    }
+}
+.item-name{
+    font-size: 150%;
+    font-family: arca-majora3;
+    color: white;
+}
 
-                <h2>Regular Combo (10% Discount)</h2>
-                <a class="subg1">
-                    <p class="item1">Veg Sandwich (2PCS) + Coke (2PCS): 195rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Sandwich (2PCS) + Coke (2PCS): 233rs</p>
-                </a>
-                <a class="subg1" id="1">
-                    <p class="item1">Fish Fry (2PCS) + Coke (2PCS): 270rs</p>
-                </a>
-            </div>
+#navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.093);
+    box-shadow: 0px -0.5px 20px rgba(0, 0, 0, 0.536);
+    width: 100vw;
+    aspect-ratio: 412/78;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-            <div id="mt" class="group1">
+#nav-box{
+    background-color: rgba(255, 255, 255, 0);
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-                <h2>Plain Milk Tea</h2>
-                <a class="subg1">
-                    <p class="item1">Small Chai: 10rs</p>
-                </a>
-                <a class="subg1" id="2">
-                    <p class="item1">Large Chai: 20rs</p>
-                </a>
-            </div>
+#company{
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+width: 60%;
+height: 100%;
+border-radius: 10px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+#company-logo{
+    height: 100%;
+    aspect-ratio: 1/1;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    80%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#company-branch{
+    font-family: arca-majora3;
+    font-size: 140%;
+}
 
 
-            <div id="pmt" class="group1">
+#top{
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+width: 35%;
+height: 100%;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
-                <h2>Premium Milk Tea</h2>
-                <a class="subg1">
-                    <p class="item1">Special Elachi Chai: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Adrak Elachi Chai: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Masala Chai: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Vanila Milk Chai: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Rose Milk Chai: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Keshar Milk Chai: 50rs</p>
-                </a>
-                <a class="subg1" id="3">
-                    <p class="item1">Butter Milk Chai: 50rs</p>
-                </a>
-            </div>
+#button-text{
+    font-family: arca-majora3;
+    font-size: 100%;
+}
 
-            <div id="fmt" class="group1">
-
-                <h2>Fusion Milk Tea</h2>
-                <a class="subg1">
-                    <p class="item1">Hot Chocolate: 60rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Kesar Pista Malai Chai: 60rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chocolate Chai: 60rs</p>
-                </a>
-                <a class="subg1" id="4">
-                    <p class="item1">Choco Chaffee: 60rs</p>
-                </a>
-            </div>
-
-            <div id="rft" class="group1">
-
-                <h2>Red & Flavoured Tea Large</h2>
-                <a class="subg1">
-                    <p class="item1">Darjeeeling Tea: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Premium Darjeeeling Tea (Oolong): 80rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Darjeeeling Rosted Tea: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Darjeeeling Green Tea (Lemon Honey): 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Organic Lemon Grass: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Organic Rose Tea: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Blue Tea: 99rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Hibiscus Red Tea: 99rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Tulsi-Ginger: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Kashmiri Kahwa: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chamomile Green Tea: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Lemon Masala Tea: 30rs</p>
-                </a>
-                <a class="subg1" id="5">
-                    <p class="item1">Plain Black CTC Tea: 20rs</p>
-                </a>
-            </div>
-
-            <div id="hfc" class="group1">
-
-                <h2>Hot & Fusion Coffee</h2>
-                <a class="subg1">
-                    <p class="item1">Coffee in Matir Var: 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Premium Hot Coffee: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Cream Coffee: 50rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Vanila Cream Coffee: 70rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Oreo Cream Coffee: 70rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chocolate Cream Coffeee: 70rs</p>
-                </a>
-                <a class="subg1" id="6">
-                    <p class="item1">Black Coffee: 30rs</p>
-                </a>
-            </div>
-
-            <div id="coke" class="group1">
-
-                <h2>Coke</h2>
-                <a class="subg1">
-                    <p class="item1">Plain Coke: 30rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Masala Coke: 50rs</p>
-                </a>
-                <a class="subg1" id="7">
-                    <p class="item1">Nimbu Pani Soda: 50rs</p>
-                </a>
-            </div>
-
-            <div id="mojito" class="group1">
-
-                <h2>Mojito / Coler</h2>
-                <a class="subg1">
-                    <p class="item1">Blue Lagoon: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Blue Berry: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Strawberry: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Kacha-Aam: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Litchi: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Green Apple: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Green Mint: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Virgin Mojito: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Lemon Ginger: 100rs</p>
-                </a>
-                <a class="subg1" id="8">
-                    <p class="item1">Lemon Ice Tea: 130rs</p>
-                </a>
-            </div>
-
-            <div id="ms" class="group1">
-
-                <h2>Milk Shake</h2>
-                <a class="subg1">
-                    <p class="item1">Chocolate: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Oreo: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Kit-Kat: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Almond-Pista: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Strawberry: 100rs</p>
-                </a>
-                <a class="subg1" id="9">
-                    <p class="item1">Mango: 100rs</p>
-                </a>
-            </div>
-
-            <div id="cc" class="group1">
-
-                <h2>Cold Coffee</h2>
-                <a class="subg1">
-                    <p class="item1">Cold Coffee With Ice-Cream: 90rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Vanila Cold Coffee: 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Oreo Cold Coffee: 100rs</p>
-                </a>
-                <a class="subg1" id="10">
-                    <p class="item1">Chocolate Cold Coffee: 100rs</p>
-                </a>
-            </div>
-
-            <div id="ic" class="group1">
-
-                <h2>Ice-Cream</h2>
-                <a class="subg1">
-                    <p class="item1">Vanila: 50rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Butterscotch: 50rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chocolate: 50rs</p>
-                </a>
-                <a class="subg1" id="11">
-                    <p class="item1">Mango: 50rs</p>
-                </a>
-            </div>
-
-            <div id="vi" class="group1">
-
-                <h2>Veg Items</h2>
-                <a class="subg1">
-                    <p class="item1">Cheese Corn Nuggets (5PCS): 69rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Alu Tikki (2PCS): 69rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">French Fry (Plain): 89rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">French Fry (Peri Peri): 89rs</p>
-                </a>
-                <a class="subg1" id="12">
-                    <p class="item1">French Fry (with Cheese): 99rs</p>
-                </a>
-            </div>
-
-            <div id="ci" class="group1">
-
-                <h2>Chicken Items</h2>
-                <a class="subg1">
-                    <p class="item1">Chicken Nuggets (5PCS): 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Pop Bites (12PCS): 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Fingers (5PCS): 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Sasusage (5PCS): 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Cutlet (2PCS): 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Fried Momo (6PCS): 100rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">ChickenFried Wings (4PCS): 130rs</p>
-                </a>
-                <a class="subg1" id="13">
-                    <p class="item1">Chicken Seek Kebab (5PCS): 130rs</p>
-                </a>
-            </div>
-
-            <div id="fi" class="group1">
-
-                <h2>Fish Items</h2>
-                <a class="subg1">
-                    <p class="item1">Fish Finger (4PCS): 179rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Fish Fry (1PC): 120rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Fish Cutlet (2PCS): 120rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Fish Ball (4PCS): 130rs</p>
-                </a>
-                <a class="subg1" id="14">
-                    <p class="item1">Fish Fry (1PC) With French Fry(Plain): 149rs</p>
-                </a>
-            </div>
-
-            <div id="maggi" class="group1">
-
-                <h2>Maggie</h2>
-                <a class="subg1">
-                    <p class="item1">Plain Veg Maggi: 69rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Corn Cheese Maggie: 79rs</p>
-                </a>
-                <a class="subg1" id="15">
-                    <p class="item1">Chicken Cheese Maggie: 89rs</p>
-                </a>
-            </div>
-
-            <div id="sw" class="group1">
-
-                <h2>Sandwich</h2>
-                <a class="subg1">
-                    <p class="item1">Veg Cheese Grilled: 69rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Corn Cheese Grilled: 79rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Panir Corn Grilled: 89rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Sandwich: 99rs</p>
-                </a>
-                <a class="subg1" id="16">
-                    <p class="item1">Chicken Cheese Sandwich: 110rs</p>
-                </a>
-            </div>
-
-            <div id="csw" class="group1">
-
-                <h2>Club Sandwich</h2>
-                <a class="subg1">
-                    <p class="item1">Veg Cheese Sandwich: 110rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Corn Club Sandwich: 120rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Paneer Club Sandwich: 130rs</p>
-                </a>
-                <a class="subg1" id="17">
-                    <p class="item1">Chicken Club Sandwich: 130rs</p>
-                </a>
-            </div>
-
-            <div id="burger" class="group1">
-
-                <h2>Burger</h2>
-                <a class="subg1">
-                    <p class="item1">Tanduri Momo Burger: 89rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Alu Tikki Burger: 79rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Burger: 89rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken Pop Burger: 89rs</p>
-                </a>
-                <a class="subg1" id="18">
-                    <p class="item1">Chicken Cheese Burger: 99rs</p>
-                </a>
-            </div>
-
-            <div id="pv" class="group1">
-
-                <h2>Pav Bhaji</h2>
-                <a class="subg1">
-                    <p class="item1">Pav Bhaji (With 2PCS Breads, Bhaji, Half Lemon & Chopped Onion): 80rs</p>
-                </a>
-                <a class="subg1" id="19">
-                    <p class="item1">Extra Breads (2PCS): 10rs</p>
-                </a>
-            </div>
-
-            <div id="pasta" class="group1">
-
-                <h2>Pasta</h2>
-                <a class="subg1">
-                    <p class="item1">Veg White Sause Pasta: 110rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Chicken White Sause Pasta: 150rs</p>
-                </a>
-                <a class="subg1" id="20">
-                    <p class="item1">Chicken Red Sause Pasta: 150rs</p>
-                </a>
-            </div>
-
-            <div id="toast" class="group1">
-
-                <h2>Toast</h2>
-                <a class="subg1">
-                    <p class="item1">Plain Butter Toast (2PCS): 40rs</p>
-                </a>
-                <a class="subg1">
-                    <p class="item1">Masala Butter Toast (2PCS): 50rs</p>
-                </a>
-                <a class="subg1" id="21">
-                    <p class="item1">Cheese Butter Toast (2PCS): 60rs</p>
-                </a>
-            </div>
-            
-            <div id="wb" class="group1">
-
-                <h2>Water Bottle</h2>
-                <a class="subg1">
-                    <p class="item1">500 ML: 10rs</p>
-                </a>
-                <a class="subg1" id="22">
-                    <p class="item1">1 L: 20rs</p>
-                </a>
-            </div>
-
-        </div>
-    </main>
-    <footer>
-        <a href="#ub"><img src="upbutton.png" alt="GO TO TOP" id="up"></a>
-        <a href="tel:6294413114"><img src="dialer.png" alt="ORDER ON CALL" id="call"></a>
-    </footer>
-
-</body>
-
-</html>
+#shadow{
+    width: 100vw;
+    aspect-ratio: 412/78;
+    background-image: linear-gradient(black,rgba(255, 255, 255, 0));
+    position: fixed;
+    top: 0;
+    left: 0;
+}
